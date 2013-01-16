@@ -1,0 +1,18 @@
+This module installs a view helper for generating links to static resources that reside on a subdomain (e.g. http://static.mydomain.com/images/image.jpg).
+
+
+Usage (within a view script):
+<?php echo $this->staticLink('my_picture.jpg', Application\View\Helper\StaticLink::IMAGE, array('profiles', 'admins')); ?>
+
+Output:
+http://static.mydomain.com/images/profiles/admins/my_picture.jpg
+
+
+The first parameter is the name of the file to create a link to.
+The second parameter is the name of the subfolder (optional). This will usually use one of the constants defined within the view helper class.
+The third parameter is an array of subdirectories to include between the subfolder and file name.
+
+
+
+For a more detailed explanation of the view helper, please visit the following link:
+http://codingexplained.com/coding/php/zend-framework/custom-zf2-view-helper
