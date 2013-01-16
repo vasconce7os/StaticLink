@@ -1,4 +1,4 @@
-This module installs a view helper for generating links to static resources that reside on a subdomain (e.g. http://static.mydomain.com/images/image.jpg).
+This module installs a view helper for generating links to static resources that reside on a subdomain (e.g. http://static.mydomain.com/images/image.jpg). Please note that performance can be improved by not using a standalone module to install the view helper. For information on how to install the helper in an alternative way, please visit the link at the bottom.
 
 
 Usage (within a view script):
